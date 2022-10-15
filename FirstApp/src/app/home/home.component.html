@@ -1,0 +1,15 @@
+<div>
+    <h1>Good Morning</h1>
+    <h2>{{title}}</h2>
+    <span *ngIf="isAvailable">Its available</span>
+    <br>
+    <select>
+      <option *ngFor="let i of months">{{i}}</option>
+    </select>
+    <h3>welcome {{name}}</h3>
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <button (click)="clicked()">click me</button>
+    <input type="text" (keyup)="keys($event)">
+    <label>{{value}}</label>
+  </div>
